@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #2a3432; /* Dark gray-green */
+  color: #e8eceb; /* Off-white text */
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 20px auto;
+  display: flex;
+  gap: 20px;
+}
+
+/* Floating Sidebar with Rounded Edges */
+.sidebar {
+  width: 200px;
+  background-color: #3b4a4d; /* Dark blue-gray */
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.sidebar .profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.sidebar h1 {
+  font-size: 1.5em;
+  color: #ffffff; /* Pure white */
+  margin: 0 0 15px 0;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #c8b998; /* Light earthy brown */
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.sidebar nav a:hover {
+  color: #a8c0bd; /* Light gray-blue */
+}
+
+/* Main Content */
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #35403e; /* Dark green-gray */
+  border-radius: 10px;
+}
+
+.content h2 {
+  color: #b8c7b5; /* Light green-gray */
+}
+
+.content p {
+  line-height: 1.6;
+}
+
+/* Links in Main Content */
+.content a {
+  color: #c8b998; /* Matches sidebar links, light earthy brown */
+  text-decoration: none;
+}
+
+.content a:hover {
+  color: #a8c0bd; /* Matches sidebar hover, light gray-blue */
+}

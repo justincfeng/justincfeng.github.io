@@ -1,116 +1,39 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-      /* Add styles for dark background */
-      body {
-        background-color: #333;
-        color: #AAAAAA;
-        font-family: "Oxygen", sans-serif;
-        font-size: 1.25em;
-        margin: 0em;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-      
-      /* Add styles for header */
-      header {
-        padding: 1em;
-        text-align: center;
-      }
-      
-      /* Add styles for section headers */
-      h2 {
-        padding: 0.5em;
-      }
-      
-      /* Add styles for main content */
-      main {
-        display: flex;
-        height: 100%;
-        max-width: 1000px;
-        margin: 0 auto;
-        flex: 1;
-      }
-      
-      /* Add styles for section content */
-      section {
-        padding: 1em;
-        width: 90%;
-      }
-      
-      /* Add styles for sidebar */
-      aside {
-        background-color: #444;
-        padding: 1em;
-        text-align: left;
-        width: 25%;
-      }
-      
-      /* Add styles for image */
-      img {
-        display: block;
-        margin: 0 auto;
-        width: 150px;
-        height: auto;
-        border-radius: 50%;
-      }
-      
-      /* Add styles for table */
-      table {
-        margin: 0 auto;
-        border-collapse: collapse;
-      }
-      th, td {
-        border: 1px solid #AAAAAA;
-        padding: 0.5em;
-      }
-      
-      /* Add styles for links */
-      a {
-        color: #AAAAAA;
-      }
-      
-      /* Add media query for smaller screens */
-      @media (max-width: 770px) {
-        main {
-          flex-direction: column;
-        }
-        
-        aside {
-          width: 100%;
-        }
-      }
-    </style>
-  </head>
-  <body>
-
-    <main>
-      <aside align="left">
-        <img src="JCF24s.jpg" alt="JCF">
-        <center>
-            <h3>Justin C. Feng</h3>
-        </center>
-        <a href="https://scholar.google.com/citations?user=BoELrRgAAAAJ&hl=en">Google Scholar</a><br>
-        <a href="https://orcid.org/0000-0003-2441-5801">ORCID</a><br>
-        <a href="http://arxiv.org/a/feng_j_1">arXiv</a><br>
-        <a href="https://github.com/justincfeng">GitHub</a><br>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Justin C. Feng</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="sidebar">
+    <img src="JCF24s.jpg" alt="Justin C. Feng" class="profile-pic">
+      <h1>Justin C. Feng</h1>
+      <nav>
+        <a href="https://scholar.google.com/citations?user=BoELrRgAAAAJ&hl=en">Google Scholar</a>
+        <a href="https://orcid.org/0000-0003-2441-5801">ORCID</a>
+        <a href="http://arxiv.org/a/feng_j_1">arXiv</a>
+        <a href="https://inspirehep.net/authors/1723180">INSPIRE HEP</a>
+        <a href="https://github.com/justincfeng">GitHub</a>
         <a href="https://www.linkedin.com/in/justincfeng/">LinkedIn</a>
-      </aside>
-      <section>
+      </nav>
+    </div>
+    <div class="content">
+
+      <section id="about">
         <p align="justify">Welcome to my academic webpage. I am currently a postdoctoral researcher at <A HREF="https://ceico.cz/">Central European Institute for Cosmology and Fundamental Physics (CEICO)</A>, at <A HREF="https://www.fzu.cz/">FZU - Institute of Physics of the Czech Academy of Sciences</A>. I work on a variety of topics related to general relativity. Here's my <A HREF="cv.pdf">cv</A>.</p>
-            
+
         <p align="justify">My email address is: feng[at]fzu.cz.</p>
+      </section>
 
-        <hr color="#AAAAAA" noshade size="1px">
+      <hr color="#AAAAAA" noshade size="1px">
 
-        <h4>Notes</h4>
+      </section>
 
-        <p align="justify"><A HREF="Tensors_Poor_Man.pdf">The Poor Man's Introduction to Tensors</A> - These are my notes on the tensor formalism for multivariable calculus. The notes serve as an introduction accessible to those with a basic knowledge of linear algebra and vector calculus. For those who wish to read these notes on a mobile device, <A HREF="Tensors_Poor_Man_2c.pdf">here</A> is the two column version. <br></p>
-
-		<h4>Codes and Mathematica files</h4>
+      <section id="codes">
+        <h2>Codes</h2>
 
         <p align="justify"><A HREF="https://github.com/justincfeng/squirrel.jl">squirrel.jl</A> - This is a Curved Spacetime Relativistic Location tool for use in relativistic positioning systems.</p>
 
@@ -118,13 +41,23 @@
 
         <p align="justify"><A HREF="https://github.com/justincfeng/PoMiN">PoMiN</A> - This is a Post-Minkowskian N-Body code, written in C, which includes General Relativistic effects up to first order in Newton's constant <i>G</i>, and all orders in the speed of light <i>c</i>.</p>
 
+        <p align="justify"><A HREF="https://github.com/justincfeng/bhevapsolver">bhevapsolver</A> - This is a collection of julia scripts for solving a dynamical system describing the evaporation of a charged, unrotating black hole.</p>
+
         <p align="justify"><A HREF="https://github.com/justincfeng/mathematica-files">mathematica-files</A> - This repository contains mathematica files for my research articles.</p>
 
-        <hr color="#AAAAAA" noshade size="1px">
+      </section>
 
-        <p><i>Last modified 2025-02-24</i></p>
+      <section id="notes">
+        <h2>Notes</h2>
+
+        <p align="justify"><A HREF="Tensors_Poor_Man.pdf">The Poor Man's Introduction to Tensors</A> - These are my notes on the tensor formalism for multivariable calculus. The notes serve as an introduction accessible to those with a basic knowledge of linear algebra and vector calculus. For those who wish to read these notes on a mobile device, <A HREF="Tensors_Poor_Man_2c.pdf">here</A> is the two column version. <br></p>
 
       </section>
-    </main>
-  </body>
+
+      <hr color="#AAAAAA" noshade size="1px">
+
+      <p><i>Last modified 2025-04-03</i></p>
+    </div>
+  </div>
+</body>
 </html>
