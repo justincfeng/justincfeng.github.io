@@ -1,24 +1,23 @@
-/* Force background across viewport */
+/* Force background everywhere */
 html {
-  background-color: #252f2e; /* Darker green-gray, closer to Julia docs */
-  min-height: 100vh; /* Full viewport height */
-  margin: 0;
-  padding: 0;
+  background-color: #252f2e; /* Dark green-gray */
 }
 
 body {
-  font-family: Arial, sans-serif;
   background-color: #252f2e; /* Match html */
-  color: #e0e6e5; /* Slightly brighter off-white */
+  font-family: Arial, sans-serif;
+  color: #e0e6e5; /* Off-white text */
   margin: 0;
   padding: 0;
 }
 
+/* Ensure wrapper and children inherit correctly */
 .wrapper {
   max-width: 1000px;
   margin: 20px auto;
   display: flex;
   gap: 20px;
+  background-color: inherit; /* Inherit from body */
 }
 
 .sidebar {
