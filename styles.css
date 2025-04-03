@@ -1,18 +1,23 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
+/* Ensure background fills viewport */
+html {
   background-color: #2a3432; /* Dark gray-green */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #2a3432; /* Match html for consistency */
   color: #e8eceb; /* Off-white text */
+  margin: 0; /* Reset default margins */
+  padding: 0;
 }
 
 .wrapper {
   max-width: 1000px;
-  margin: 20px auto;
+  margin: 20px auto; /* Centered with top/bottom spacing */
   display: flex;
   gap: 20px;
 }
 
-/* Floating Sidebar with Rounded Edges */
 .sidebar {
   width: 200px;
   background-color: #3b4a4d; /* Dark blue-gray */
@@ -23,8 +28,8 @@ body {
 }
 
 .sidebar .profile-pic {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   margin-bottom: 15px;
 }
@@ -46,7 +51,6 @@ body {
   color: #a8c0bd; /* Light gray-blue */
 }
 
-/* Main Content */
 .content {
   flex: 1;
   padding: 20px;
@@ -62,12 +66,11 @@ body {
   line-height: 1.6;
 }
 
-/* Links in Main Content */
 .content a {
-  color: #c8b998; /* Matches sidebar links, light earthy brown */
+  color: #c8b998; /* Light earthy brown */
   text-decoration: none;
 }
 
 .content a:hover {
-  color: #a8c0bd; /* Matches sidebar hover, light gray-blue */
+  color: #a8c0bd; /* Light gray-blue */
 }
