@@ -1,23 +1,19 @@
-/* Force background everywhere */
-html {
+html, body {
   background-color: #252f2e; /* Dark green-gray */
-}
-
-body {
-  background-color: #252f2e; /* Match html */
-  font-family: Arial, sans-serif;
-  color: #e0e6e5; /* Off-white text */
   margin: 0;
   padding: 0;
 }
 
-/* Ensure wrapper and children inherit correctly */
+body {
+  font-family: Arial, sans-serif;
+  color: #e0e6e5; /* Off-white text */
+}
+
 .wrapper {
   max-width: 1000px;
   margin: 20px auto;
   display: flex;
   gap: 20px;
-  background-color: inherit; /* Inherit from body */
 }
 
 .sidebar {
@@ -75,4 +71,17 @@ body {
 
 .content a:hover {
   color: #a2b8b5; /* Match sidebar hover */
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+  .wrapper {
+    flex-direction: column; /* Stack vertically */
+    margin: 10px; /* Reduce side margins */
+  }
+
+  .sidebar {
+    width: auto; /* Full width on mobile */
+    margin-bottom: 20px; /* Space below sidebar */
+  }
 }
